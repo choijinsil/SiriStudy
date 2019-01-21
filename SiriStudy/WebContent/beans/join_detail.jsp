@@ -27,6 +27,15 @@
 			location.href="join_delete.jsp?id="+_id;
 		}
 	}
+	
+	function _update(_id){
+		var isOk= confirm("회원정보를 수정하시겠습니까?");
+		if(isOk=false){
+			
+		}else{
+			location.href="join_update.jsp?id="+_id;
+		}
+	}
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
@@ -35,7 +44,7 @@
 <body>
 <h2>회원 상세페이지</h2>
 <p onclick='del(<%=u.getId() %>)'>순번: <%=u.getId() %></p>
-유저 Id:<%=u.getUserId() %><br/>
+<p onclick='_update(<%=u.getId()%>)'>유저 Id:<%=u.getUserId() %></p><br/>
 이름:<%=u.getUserName() %><br/>
 E-Mail:<%=u.getUserEmail() %><br/>
 

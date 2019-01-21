@@ -165,4 +165,29 @@ public class UserService implements Serializable{
 		
 	return id;	
 	}
+	
+	// 수정
+	public UserTest update(UserTest userTest){
+		Connection conn=null;
+		PreparedStatement pstmt=null;
+		
+		try {
+			conn=DBConnUtil.getConnection();
+			String sql="update member set user_pass=?,user_name=?,user_email=? where id= ?";
+			pstmt=conn.prepareStatement(sql);
+			
+			pstmt.setString(1, userTest.getUserPass());
+			pstmt.setString(2, userTest.getUserName());
+			pstmt.setString(3, userTest.getUserEmail());
+			pstmt.setLong(4, userTest.getId());
+			pstmt.executeQuery();
+
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}finally {
+			DBConnUtil.close(pstmt, conn);
+		}
+		return userTest;
+	}
 }
