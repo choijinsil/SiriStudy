@@ -1,2 +1,6 @@
 beans\UserVote.class
+conf\MybatisConf.class
+service\UserService.class
+Person.class
 beans\UserTest.class
+jdbc\DBConnUtil.class

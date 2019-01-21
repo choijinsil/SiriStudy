@@ -26,41 +26,48 @@ public class UserTest implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	// id, pass
-	private String id;
-	private String pass;
-	private String name;
-	private String email;
+	private Long id;
+	private String userId;
+	private String userPass;
+	private String userName;
+	private String userEmail;
 	
-	public String getId() {
+	public String getUserId() {
+		return userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+	public String getUserPass() {
+		return userPass;
+	}
+	public void setUserPass(String userPass) {
+		this.userPass = userPass;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public String getUserEmail() {
+		return userEmail;
+	}
+	public void setUserEmail(String userEmail) {
+		this.userEmail = userEmail;
+	}
+	
+	
+	public Long getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
-	}
-	public String getPass() {
-		return pass;
-	}
-	public void setPass(String pass) {
-		this.pass = pass;
-	}
-	
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
 	}
 	@Override
 	public String toString() {
-		return "UserTest [id=" + id + ", pass=" + pass + ", name=" + name + ", email=" + email + "]";
+		return "UserTest [userId=" + userId + ", userPass=" + userPass + ", userName=" + userName + ", userEmail="
+				+ userEmail + "]";
 	}
-	
-	
 
 }
