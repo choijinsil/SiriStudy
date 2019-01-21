@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 <form action="join_page.jsp">
 <div>
 
@@ -18,6 +19,7 @@
 <input type="submit" value="회원 가입">
 
 </div>
+
 </form>
 </body>
 </html>

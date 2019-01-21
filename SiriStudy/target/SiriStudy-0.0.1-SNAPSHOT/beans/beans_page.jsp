@@ -4,7 +4,7 @@
 <jsp:setProperty property="*" name="userTest"/>
 
 <%
-	if("admin".equals(userTest.getId())&&"admin".equals(userTest.getPass())){
+	if("admin".equals(userTest.getId())&&"admin".equals(userTest.getUserPass())){
 		// 세션에 값을 저장
 		session.setAttribute("uid",userTest.getId());
 		
