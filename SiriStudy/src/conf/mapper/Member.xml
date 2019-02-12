@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <!-- xml의 id, xml변경시 톰캣 재시작해야함 -->
+ <mapper namespace="eclass.member">
+ 
+ 	<select id="memberList">
+ 	select * from users
+ 	</select>
+ 	
+ 	<select id="memberListId">
+ 	select * from member where id=1;
+ 	</select>
+ 	
+ 	<insert id="memberInsert" parameterType="member.MemberDTO">
+ 	insert into member (user_id, user_pass, user_email, user_auth_hash, user_auth_check)
+	values(#{userId},#{userPw},#{userEmail},#{userAuthHash},#{userAuthCheck})
+ 	</insert>
+ 	
+ </mapper>

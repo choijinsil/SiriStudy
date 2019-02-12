@@ -68,7 +68,7 @@ $(function(){
         </div>            
         <div class="form-group">
           <label for="userEmail">이메일 주소</label>
-          <input type="email" class="form-control" id="userEmail" name="userEmail" placeholder="이메일 주소" >
+          <input type="email" class="form-control" id="userEmail" name="userEmail" placeholder="이메일 주소" value="test">
         </div>           
         <div class="form-group text-center">
           <button type="button" class="btn btn-info" id="joinBtn">회원가입</button>              

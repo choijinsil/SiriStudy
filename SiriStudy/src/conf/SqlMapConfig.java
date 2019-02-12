@@ -34,15 +34,16 @@ import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;
  * </pre>
  */
 
-public class MybatisConf {
+public class SqlMapConfig {
 	private static SqlSessionFactory sqlsession;
 	static {
 		try {
+			System.out.println("SDaaaa");
 			String resource = "./conf/mybatis-config.xml";
 			Reader reader = Resources.getResourceAsReader(resource);
 			sqlsession = new SqlSessionFactoryBuilder().build(reader);
 			reader.close();
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 			throw new RuntimeException("error: " + e);
 		}

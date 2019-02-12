@@ -1,6 +1,9 @@
+conf\SqlMapConfig.class
 beans\UserVote.class
-conf\MybatisConf.class
+beans\UserTest.class
+member\MemberDTO.class
 service\UserService.class
 Person.class
-beans\UserTest.class
+member\MemberDAOImpl.class
+member\MemberDAO.class
 jdbc\DBConnUtil.class
