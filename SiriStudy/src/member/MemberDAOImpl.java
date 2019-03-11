@@ -40,7 +40,7 @@ public class MemberDAOImpl implements MemberDAO{
 
 	@Override
 	public List<MemberDTO> select() {
-		// TODO Auto-generated method stub
+		//sqlSession.select(statement, handler);
 		return null;
 	}
 

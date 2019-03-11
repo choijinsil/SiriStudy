@@ -11,8 +11,8 @@
 	<h2> 회원 상세보기</h2>
 	<table border="1">
 		<tr>
-			<th>순번: ${member.id } </th>
-			<th>이름: ${member.userId }</th>
+			<th>순번: ${joinMember.id } </th>
+			<th>이름: ${joinMember.userId }</th>
 		</tr>
 		
 		
